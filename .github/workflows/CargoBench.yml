@@ -17,4 +17,4 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: bench
-          args: --manifest-path HelloWorld/Cargo.toml
+          args: --manifest-path app/Cargo.toml
