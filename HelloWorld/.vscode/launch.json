@@ -7,15 +7,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'hello_world'",
+            "name": "Debug executable 'HelloWorld'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=hello_world",
-                    "--package=hello_world"
+                    "--bin=HelloWorld",
+                    "--package=HelloWorld"
                 ],
                 "filter": {
-                    "name": "hello_world",
+                    "name": "HelloWorld",
                     "kind": "bin"
                 }
             },
@@ -25,16 +25,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'hello_world'",
+            "name": "Debug unit tests in executable 'HelloWorld'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=hello_world",
-                    "--package=hello_world"
+                    "--bin=HelloWorld",
+                    "--package=HelloWorld"
                 ],
                 "filter": {
-                    "name": "hello_world",
+                    "name": "HelloWorld",
                     "kind": "bin"
                 }
             },
