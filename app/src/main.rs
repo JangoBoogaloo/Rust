@@ -1,5 +1,11 @@
+use std::fmt::format;
+
 pub trait Summary {
     fn summarize(&self) -> String;
+    fn summarize_default(&self) -> String
+    {
+        format!("Default Summary {}", self.summarize())
+    }
 }
 
 pub struct NewsArticle {
@@ -46,4 +52,7 @@ fn main() {
 
     println!("1 new tweet: {}", tweet.summarize());
     println!("2 new article: {}", news_article.summarize());
+
+    println!("1 new tweet: {}", tweet.summarize_default());
+    println!("2 new article: {}", news_article.summarize_default());
 }
