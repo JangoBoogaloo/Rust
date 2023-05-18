@@ -20,7 +20,9 @@
                 }
             },
             "args": [
-                "--help"
+                "login",
+                "-k", "my_key",
+                "-s", "my_secret"
             ],
             "cwd": "${workspaceFolder}"
         },
