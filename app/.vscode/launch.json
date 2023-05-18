@@ -11,30 +11,34 @@
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=app",
-                    "--package=app"
+                    "--bin=ugsr",
+                    "--package=ugsr"
                 ],
                 "filter": {
-                    "name": "app",
+                    "name": "ugsr",
                     "kind": "bin"
                 }
             },
-            "args": [],
+            "args": [
+                "login",
+                "-k", "my_key",
+                "-s", "my_secret"
+            ],
             "cwd": "${workspaceFolder}"
         },
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'app'",
+            "name": "Debug unit tests in executable 'ugsr'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=app",
-                    "--package=app"
+                    "--bin=ugsr",
+                    "--package=ugsr"
                 ],
                 "filter": {
-                    "name": "app",
+                    "name": "ugsr",
                     "kind": "bin"
                 }
             },
